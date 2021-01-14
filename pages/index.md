@@ -6,8 +6,8 @@ comment: true
 home_btn: true
 btn_text: true
 footer: true
-title: ""
-author: ""
+title: "Batuhan Sevinç"
+author: "Batuhan Sevinç"
 encrypted_text: true
 permalink: /
 ---
