@@ -12,10 +12,10 @@ encrypted_text: true
 permalink: /
 ---
 {{site.collection_order[0]}}
-# PROJECT VeXEd - HACKER-STYLE PERSONAL HOMEPAGE
+# Batuhan Sevinc & Software Engineer-Developer
 
 <br>
-> pRoJEct-NeGYa is a hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
+> Hello My Name is Batuhan. I am currently studying Software Engineering at Izmır Unıversity of Economics.
 
 
 ##  Features
