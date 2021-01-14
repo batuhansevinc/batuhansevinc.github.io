@@ -1,1 +1,0 @@
-# batuhansevinc.github.io
