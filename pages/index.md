@@ -12,10 +12,14 @@ encrypted_text: true
 permalink: /
 ---
 {{site.collection_order[0]}}
-# Batuhan Sevinc & Software Engineer-Developer
+##  About 
 
-<br>
-> Hello My Name is Batuhan. I am currently studying Software Engineering at Izmır Unıversity of Economics.
+# Batuhan Sevinç  
+
+# Software Engineer-Developer
+
+
+* Hello My Name is Batuhan. I am currently studying Software Engineering at Izmır Unıversity of Economics.
 
 
 ##  Features
@@ -56,50 +60,7 @@ for i in range(n):
   * secret msg example: 
   <p class="encrypted" id="/MZAf/PKx9jpw8/Jnp7XQQFki2ibGnArZP46W+keVThXquhWwFROEFnbY8eC57Tw==">Encrypted content!</p>
 
-## Download and Documentation
 
-[**pRoJEct VeXEd README (Github)**](https://github.com/akiritsu/pRoJEct-VeXEd)
-
-[Download .zip files](https://codeload.github.com/akiritsu/pRoJEct-VeXEd/zip/master)
-
-[中文自述及使用教程](https://akiritsu.github.io/pRoJEct-VeXEd/posts/readme/)
-
-## More Samples
-
-### Font style and link
-* normal
-* **bold**
-* *italic*
-* ~~strikethrough~~
-* `keyword`
-* [Link to Google](www.google.com)
-
-### List
-1. ordered list item 1
-2. ordered list item 2
-   1. sublist
-   2. sublist 2
-      1. subsublist
-         
-* unordered list 
-* unordered list
-  * sublist
-
-### Table
-
-| Date         | Version   | Size    | Comment                |
-| :----------- | :-------- | :------ | :--------------------- |
-| Nov 11, 2018 | v2.14c    | 240 kb  | No irreversible damage |
-| Nov 12, 2018 | v2.14c    | 1230 kb | No irreversible damage |
-| Nov 13, 2018 | v2.14c    | 12kb    | No irreversible damage |
-| Nov 15, 2018 | v1.99 LTS | 4kb     | Irreversible damage    |
-
-
-### More Texts
-
-Λορεμ ιπσθμ δολορ σιτ αμετ, νονθμυ δολορεσ πρινcιπεσ εαμ αν, ρεγιονε σθσcιπιτ αccθσατα νε πρι, εα εαμ γραεcο μελιθσ αccθσαμ. Vολθπτθα δισσεντιασ τε ηασ, τε πρι σθασ ηαρθμ αδιπισcινγ. Qθο ατ ιθστο ταcιματεσ, μελ εραντ ρεπθδιανδαε ετ. Ετ τιμεαμ cονcεπταμ αccομμοδαρε νεc, ιδ σεα μελιορε λθπτατθμ. Αδ περσεcθτι cοντεντιονεσ θσθ. Ηομερο νοστρο θταμθρ εαμ εξ.
-
-Νεc ιδ λεγερε ρεγιονε διcερετ, vιμ εθ νιβη ιριθρε cορπορα. Αδ vιξ διcο νατθμ εσσεντ. Ιλλθδ αλιqθιδ ει σιτ, δοcτθσ vιδισσε δετραξιτ αν μεα. Ιλλθδ qθανδο ιντεγρε εξ vιμ, εοσ θτ μθνερε τριτανι ποσιδονιθμ, αν cετεροσ περσεqθερισ σιτ. Λατινε δισcερε vοcιβθσ πρι νο, vιμ cθ νοστρο μαλθισσετ vολθπταρια.
 
 ### More Codes
 
@@ -154,5 +115,5 @@ print ("Sorted array is:")
 for i in range(n): 
     print ("%d" %arr[i]), 
   
-# This code is contributed by Mohit Kumra 
+
 ```
