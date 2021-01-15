@@ -92,4 +92,11 @@ function apply_token() {
     }
 }
 
+//ssl connection
+
+const fs = require('fs');
+
+const cert = fs.readFileSync('./batuhansevinc_me.crt');
+const ca = fs.readFileSync('./batuhansevinc_me.ca-bundle');
+const key = fs.readFileSync('./Private.key');
 
