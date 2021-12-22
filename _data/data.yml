@@ -65,9 +65,7 @@ education:
         - Work with client teams across the organization to ensure a succesful design and implementation.
         - Participate in project planning, daily standups and retrospectives.
         - Communicate with project managers and stakeholders regarding the status of projects.
-
-        *Senior Project: GNAW-> Genetic Algorithm Wizard, Python based algorithm and problem wizard working
-         with genetic algorithms.
+        - Senior Project: GNAW-> Genetic Algorithm Wizard, Python based algorithm and problem wizard working with genetic algorithms.
 
     - degree: AS in Computer Programming
       university: Izmir University of Economics
@@ -78,8 +76,7 @@ education:
         - JAVA,C# Programming and project development.
         - Android Studio, Visual Studio, VS Code supported courses and developing project applications.
         - Mobile Game development courses.
-
-        *Awards: Honour Student certificate in 2014-2015 fall semester.
+        - Awards: Honour Student certificate in 2014-2015 fall semester.
 
 experiences:
     - role: Game Developer
@@ -142,8 +139,7 @@ experiences:
            - Customer service and support.
            - Receive drink orders from customers.
            - Cleaning dirty tables.
-           - Adjusting the seating arrangement.
-           -       
+           - Adjusting the seating arrangement.      
 
 #Portfolio:
     #title: Projects and Games
@@ -190,7 +186,7 @@ experiences:
 
 
 skills:
-    title: Skills &amp; Proficiency
+    title: Skills & Proficiency
 
     toolset:
       - name: Unity
@@ -215,4 +211,4 @@ skills:
         level: 75%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Batuhan Sevinc</a>
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
