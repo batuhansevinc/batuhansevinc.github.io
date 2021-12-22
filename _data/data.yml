@@ -174,15 +174,15 @@ projects:
         link: "Not Available"
         tagline: "Endless runner based game that controlling the bowling ball by tapping to screen "
 
-#publications:
-   # title: Publications
-   # intro: |
-    #  My Propjects
-    #papers:
-    #  - title: Gnaw-> Genetic Algorithm Wizard (Senior Project of Software Engineering)
-    #    link: "https://github.com/batuhansevinc/GeneticAlgorithmWizard-GNAW"
-    #    authors: E. Batuhan Sevinc, Efe Berk Dinc, Assoc. Prof. Kaya Oguz
-    #    conference: GBFY Turkey, 2020
+publications:
+    title: Publications
+    intro: |
+      My Propjects
+    papers:
+      - title: Gnaw-> Genetic Algorithm Wizard (Senior Project of Software Engineering)
+        link: "https://github.com/batuhansevinc/GeneticAlgorithmWizard-GNAW"
+        authors: E. Batuhan Sevinc, Efe Berk Dinc, Assoc. Prof. Kaya Oguz
+        conference: GBFY Turkey, 2020
 
 
 skills:
