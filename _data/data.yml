@@ -54,29 +54,29 @@ sidebar:
 #        Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
 #        Currently working as a freelance Junior & Mid Unity & Software Developer.
 
-#education:
-#    - degree: BSc in Software Engineering
-#      university: Izmir University of Economics
-#      time: 2016 - 2022
-#      details: |
-#        - Coordinate designs and implementation with QA to enable automated and manual testing.
-#        - Write unit tests for components.
-#        - Design and implement gaming software platforms(UNITY,UNREAL ENGINE) for mobile, embeded and desktop platforms.
-#        - Work with client teams across the organization to ensure a succesful design and implementation.
-#        - Participate in project planning, daily standups and retrospectives.
-#        - Communicate with project managers and stakeholders regarding the status of projects.
-#        - Senior Project: GNAW-> Genetic Algorithm Wizard, Python based algorithm and problem wizard working with genetic algorithms.
+education:
+    - degree: BSc in Software Engineering
+      university: Izmir University of Economics
+      time: 2016 - 2022
+      details: |
+        - Coordinate designs and implementation with QA to enable automated and manual testing.
+        - Write unit tests for components.
+        - Design and implement gaming software platforms(UNITY,UNREAL ENGINE) for mobile, embeded and desktop platforms.
+        - Work with client teams across the organization to ensure a succesful design and implementation.
+        - Participate in project planning, daily standups and retrospectives.
+        - Communicate with project managers and stakeholders regarding the status of projects.
+        - Senior Project: GNAW-> Genetic Algorithm Wizard, Python based algorithm and problem wizard working with genetic algorithms.
 
-#    - degree: AS in Computer Programming
-#      university: Izmir University of Economics
-#      time: 2014 - 2016
-#      details: |
-#        - Database systems Mysql,Microsoft Access.
-#        - PHP, HTML, .NET, CSS development.
-#        - JAVA,C# Programming and project development.
-#        - Android Studio, Visual Studio, VS Code supported courses and developing project applications.
-#        - Mobile Game development courses.
-#        - Awards: Honour Student certificate in 2014-2015 fall semester.
+    - degree: AS in Computer Programming
+      university: Izmir University of Economics
+      time: 2014 - 2016
+      details: |
+        - Database systems Mysql,Microsoft Access.
+        - PHP, HTML, .NET, CSS development.
+        - JAVA,C# Programming and project development.
+        - Android Studio, Visual Studio, VS Code supported courses and developing project applications.
+        - Mobile Game development courses.
+        - Awards: Honour Student certificate in 2014-2015 fall semester.
 
 #experiences:
 #    - role: Game Developer
