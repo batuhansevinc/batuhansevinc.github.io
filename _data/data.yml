@@ -57,7 +57,7 @@ sidebar:
 education:
     - degree: BSc in Software Engineering
       university: Izmir University of Economics
-      time: 2016 - 2022
+      time: 2016 - present
       details: |
         - Coordinate designs and implementation with QA to enable automated and manual testing.
         - Write unit tests for components.
@@ -78,68 +78,68 @@ education:
         - Mobile Game development courses.
         - Awards: Honour Student certificate in 2014-2015 fall semester.
 
-#experiences:
-#    - role: Game Developer
-#      time: 2020 - Present
-#      company: Unicode Games, Izmir-Turkey
-#      details: |
-#          - Contribute ideas in a collaborative, supportive team environment.
-#          - Suggest improvoments to the developed product.
-#          - Fix bugs during development and in production.
-#          - Analyze code and present technical options.
-#          - Help to scope , estimate and coordinate sprint tasks and work with cross-functional team including product QA, design and art.
-#          - Work closely with engineering leadership to architect, build, refactor and maintain mobile(Android) client/server tech and features that can scale to millions of users.
-#          - Developing Hyper-Casual games using with Unity Game Engine.
+experiences:
+    - role: Game Developer
+      time: 2020 - Present
+      company: Unicode Games, Izmir-Turkey
+      details: |
+          - Contribute ideas in a collaborative, supportive team environment.
+          - Suggest improvoments to the developed product.
+          - Fix bugs during development and in production.
+          - Analyze code and present technical options.
+          - Help to scope , estimate and coordinate sprint tasks and work with cross-functional team including product QA, design and art.
+          - Work closely with engineering leadership to architect, build, refactor and maintain mobile(Android) client/server tech and features that can scale to millions of users.
+          - Developing Hyper-Casual games using with Unity Game Engine.
         
-#    - role: Freelance Game Developer (Unity)
-#      time: 2019 - 2020
-#      company: Self-Employed, Izmir-Turkey
-#      details: |
-#           - Store marketing analyze and develop products(games) according to results
-#           - Unity Game development for Android, Windows.
-#           - Adhere to, help create,maintain coding, production and quality assurance software standarts.
-#           - Perform gap analysis and develop optimized road maps to support strategic initiatives.
+    - role: Freelance Game Developer (Unity)
+      time: 2019 - 2020
+      company: Self-Employed, Izmir-Turkey
+      details: |
+           - Store marketing analyze and develop products(games) according to results
+           - Unity Game development for Android, Windows.
+           - Adhere to, help create,maintain coding, production and quality assurance software standarts.
+           - Perform gap analysis and develop optimized road maps to support strategic initiatives.
 
-#    - role: Waiter(Part-time 2020)
-#      time: 2019 - 2020
-#      company: Cactus Cantina, Alabama-USA
-#      details: |
-#           - Part-time Summer job.
-#           - Customer service and support.
-#           - Receive orders from customers.
-#           - Receive payments by Credit card or cash.
-#           - Help to bussers cleaning tables.
+    - role: Waiter(Part-time 2020)
+      time: 2019 - 2020
+      company: Cactus Cantina, Alabama-USA
+      details: |
+           - Part-time Summer job.
+           - Customer service and support.
+           - Receive orders from customers.
+           - Receive payments by Credit card or cash.
+           - Help to bussers cleaning tables.
 
-#    - role: Front Desk Associate & Computer Technician (Summer Work & Travel Program 2019)
-#      time: 2019 - 2020
-#      company: Brett-Robinson Vacation Rentals, Alabama-USA
-#      details: |
-#           - Summer Work & Travel Program job.
-#           - Customer service and support.
-#           - Check-in/out guests and check reservations.
-#           - Receive payments by Credit card or cash.
-#           - Help installing programs to other computers.
-#           - Notify the IT technician of instantaneous errors.
-#
-  #  - role: Waiter(Summer Work & Travel Program 2019)
-  #    time: 2018 - 2019
-  #    company: Zephyr Cove Resort, Nevada-USA
- #     details: |
- #          - Summer Work & Travel Program job.
-#           - Customer service and support.
-#           - Receive orders from customers.
-#           - Receive payments by Credit card or cash.
-#           - Help to bussers cleaning tables.
-#
-#    - role: Busser(Summer Work & Travel Program 2018)
-#      time: 2017 - 2018
-#      company: Zephyr Cove Resort, Nevada-USA
-#      details: |
-#           - Summer Work & Travel Program job.
-#           - Customer service and support.
-#           - Receive drink orders from customers.
-#           - Cleaning dirty tables.
-#           - Adjusting the seating arrangement.      
+    - role: Front Desk Associate & Computer Technician (Summer Work & Travel Program 2019)
+      time: 2019 - 2020
+      company: Brett-Robinson Vacation Rentals, Alabama-USA
+      details: |
+           - Summer Work & Travel Program job.
+           - Customer service and support.
+           - Check-in/out guests and check reservations.
+           - Receive payments by Credit card or cash.
+           - Help installing programs to other computers.
+           - Notify the IT technician of instantaneous errors.
+
+    - role: Waiter(Summer Work & Travel Program 2019)
+      time: 2018 - 2019
+      company: Zephyr Cove Resort, Nevada-USA
+      details: |
+           - Summer Work & Travel Program job.
+           - Customer service and support.
+           - Receive orders from customers.
+           - Receive payments by Credit card or cash.
+           - Help to bussers cleaning tables.
+
+    - role: Busser(Summer Work & Travel Program 2018)
+      time: 2017 - 2018
+      company: Zephyr Cove Resort, Nevada-USA
+      details: |
+           - Summer Work & Travel Program job.
+           - Customer service and support.
+           - Receive drink orders from customers.
+           - Cleaning dirty tables.
+           - Adjusting the seating arrangement.      
 
 #Portfolio:
     #title: Projects and Games
