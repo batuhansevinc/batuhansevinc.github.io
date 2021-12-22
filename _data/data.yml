@@ -13,7 +13,7 @@ sidebar:
 
     # Sidebar links
     email: eyupbatuhansevinc@gmail.com
-    phone: [Ask me from e-mail]
+    phone: 
     website: batuhansevinc.me #do not add http://
     linkedin: batuhansevinc
     xing: eyupbatuhansevinc
@@ -175,10 +175,6 @@ Portfolio:
       - title: Bowling Rush 3D (BSc, Course Project Mobile Game)
         link: "Not Available"
         tagline: "Endless runner based game that controlling the bowling ball by tapping to screen "
-
-      - title: 
-        link: 
-        tagline: "Python based algorithm and problem wizard working with genetic algorithms."
 
 publications:
     title: Publications
