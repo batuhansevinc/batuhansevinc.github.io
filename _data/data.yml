@@ -47,12 +47,12 @@ sidebar:
       - item: Hyper-Casual
         link:
 
-career-profile:
-    title: Profile
-    summary: |
-          Sofware engineering student in senior class at Izmir University of Economics.
-        Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
-        Currently working as a freelance Junior & Mid Unity & Software Developer.
+#career-profile:
+#    title: Profile
+#    summary: |
+#          Sofware engineering student in senior class at Izmir University of Economics.
+#        Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
+#        Currently working as a freelance Junior & Mid Unity & Software Developer.
 
 #education:
 #    - degree: BSc in Software Engineering
