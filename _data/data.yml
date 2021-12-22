@@ -3,7 +3,7 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: False # set to False if you want education in main section instead of in sidebar
 
     # Profile information
@@ -32,10 +32,10 @@ sidebar:
         level: Native
 
       - idiom: English
-        level: Professional
+        level: C1
 
       - idiom: German
-        level: Middle
+        level: A2
 
     interests:
       - item: Programming
@@ -47,12 +47,12 @@ sidebar:
       - item: Hyper-Casual
         link:
 
-#career-profile:
-#    title: Profile
-#    summary: |
-#          Sofware engineering student in senior class at Izmir University of Economics.
-#        Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
-#        Currently working as a freelance Junior & Mid Unity & Software Developer.
+career-profile:
+    title: Profile
+    summary: |
+           Sofware engineering student in senior class at Izmir University of Economics.
+           Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
+           Currently working as a freelance Junior & Mid Unity & Software Developer.
 
 education:
     - degree: BSc in Software Engineering
