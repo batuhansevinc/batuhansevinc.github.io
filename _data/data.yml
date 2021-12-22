@@ -8,7 +8,7 @@ sidebar:
 
     # Profile information
     name: Eyup Batuhan Sevinc
-    tagline: Junior Game Developer
+    tagline: Unity Game Developer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -21,7 +21,7 @@ sidebar:
     telegram: # add your nickname without '@' sign
     gitlab:
     bitbucket:
-    twitter: '@bthnsvnc'
+    twitter: 'bthnsvnc'
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
@@ -79,7 +79,7 @@ education:
         - Awards: Honour Student certificate in 2014-2015 fall semester.
 
 experiences:
-    - role: Game Developer
+    - role: Unity Game Developer
       time: 2020 - Present
       company: Unicode Games, Izmir-Turkey
       details: |
@@ -100,7 +100,7 @@ experiences:
            - Adhere to, help create,maintain coding, production and quality assurance software standarts.
            - Perform gap analysis and develop optimized road maps to support strategic initiatives.
 
-    - role: Waiter(Part-time 2020)
+    - role: Waiter (Part-time 2020)
       time: 2019 - 2020
       company: Cactus Cantina, Alabama-USA
       details: |
@@ -121,7 +121,7 @@ experiences:
            - Help installing programs to other computers.
            - Notify the IT technician of instantaneous errors.
 
-    - role: Waiter(Summer Work & Travel Program 2019)
+    - role: Waiter (Summer Work & Travel Program 2019)
       time: 2018 - 2019
       company: Zephyr Cove Resort, Nevada-USA
       details: |
@@ -131,7 +131,7 @@ experiences:
            - Receive payments by Credit card or cash.
            - Help to bussers cleaning tables.
 
-    - role: Busser(Summer Work & Travel Program 2018)
+    - role: Busser (Summer Work & Travel Program 2018)
       time: 2017 - 2018
       company: Zephyr Cove Resort, Nevada-USA
       details: |
@@ -142,9 +142,9 @@ experiences:
            - Adjusting the seating arrangement.      
 
 projects:
-    title: Projects and Games
+    title: My Portfolio
     intro: >
-      My Portfolio
+      Games
     assignments:
       - title: Treadmill Fall (Mobile Game, Unicode Games)
         link: "https://play.google.com/store/apps/details?id=com.unicode.games.treadmillfall&hl=tr&gl=US"
@@ -175,7 +175,7 @@ projects:
         tagline: "Endless runner based game that controlling the bowling ball by tapping to screen "
 
 publications:
-    title: Publications
+    title: Publications & Projects
     intro: |
       My Propjects
     papers:
@@ -211,4 +211,4 @@ skills:
         level: 75%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    Designed with <i class="fas fa-heart"></i> by <a href="https://batuhansevinc.me" target="_blank" rel="nofollow">Batuhan Sevinc</a>
