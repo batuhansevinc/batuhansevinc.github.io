@@ -68,10 +68,10 @@ education:
 
         *Senior Project: GNAW-> Genetic Algorithm Wizard, Python based algorithm and problem wizard working
          with genetic algorithms.
+
     - degree: AS in Computer Programming
       university: Izmir University of Economics
       time: 2014 - 2016
-      gpa: 3.3/4.0
       details: |
         - Database systems Mysql,Microsoft Access.
         - PHP, HTML, .NET, CSS development.
@@ -80,6 +80,7 @@ education:
         - Mobile Game development courses.
 
         *Awards: Honour Student certificate in 2014-2015 fall semester.
+
 experiences:
     - role: Game Developer
       time: 2020 - Present
@@ -143,6 +144,7 @@ experiences:
            - Cleaning dirty tables.
            - Adjusting the seating arrangement.
            -       
+
 Portfolio:
     title: Projects and Games
     intro: >
