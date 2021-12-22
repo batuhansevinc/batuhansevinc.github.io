@@ -8,13 +8,13 @@ sidebar:
 
     # Profile information
     name: Eyup Batuhan Sevinc
-    tagline: Full Stack Developer
+    tagline: Junior Game Developer, Software Engineer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: eyupbatuhansevinc@gmail.com
-    phone: 012 345 6789
-    website: batuhansevinc.com #do not add http://
+    phone: [Ask me from e-mail]
+    website: batuhansevinc.me #do not add http://
     linkedin: batuhansevinc
     xing: eyupbatuhansevinc
     github: batuhansevinc
@@ -38,133 +38,158 @@ sidebar:
         level: Middle
 
     interests:
-      - item: Climbing
+      - item: Programming
         link:
 
-      - item: Snowboarding
+      - item: Unity
         link:
 
-      - item: Cooking
+      - item: Hyper-Casual
         link:
 
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+          Sofware engineering student in senior class at Izmir University of Economics.
+        Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
+        Currently working as a freelance Junior & Mid Unity & Software Developer.
+
 education:
-    - degree: MSc in Computer Science
-      university: University of London
-      time: 2011 - 2012
+    - degree: BSc in Software Engineering
+      university: Izmir University of Economics
+      time: 2016 - 2022(est.)
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - degree: BSc in Applied Mathematics
-      university: Bristol University
-      time: 2007 - 2011
+        - Coordinate designs and implementation with QA to enable automated and manual testing.
+        - Write unit tests for components.
+        - Design and implement gaming software platforms(UNITY,UNREAL ENGINE) for mobile, embeded and desktop platforms.
+        - Work with client teams across the organization to ensure a succesful design and implementation.
+        - Participate in project planning, daily standups and retrospectives.
+        - Communicate with project managers and stakeholders regarding the status of projects.
+
+        *Senior Project: GNAW-> Genetic Algorithm Wizard, Python based algorithm and problem wizard working
+         with genetic algorithms.
+    - degree: AS in Computer Programming
+      university: Izmir University of Economics
+      time: 2014 - 2016
+      gpa: 3.3/4.0
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        - Database systems Mysql,Microsoft Access.
+        - PHP, HTML, .NET, CSS development.
+        - JAVA,C# Programming and project development.
+        - Android Studio, Visual Studio, VS Code supported courses and developing project applications.
+        - Mobile Game development courses.
+
+        *Awards: Honour Student certificate in 2014-2015 fall semester.
 experiences:
-    - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
+    - role: Game Developer
+      time: 2020 - Present
+      company: Unicode Games, Izmir-Turkey
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
-          - Bullet point
-          - Bullet point
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
+          - Contribute ideas in a collaborative, supportive team environment.
+          - Suggest improvoments to the developed product.
+          - Fix bugs during development and in production.
+          - Analyze code and present technical options.
+          - Help to scope , estimate and coordinate sprint tasks and work with cross-functional team including product QA, design and art.
+          - Work closely with engineering leadership to architect, build, refactor and maintain mobile(Android) client/server tech and features that can scale to millions of users.
+          - Developing Hyper-Casual games using with Unity Game Engine.
+        
+    - role: Freelance Game Developer (Unity)
+      time: 2019 - 2020
+      company: Self-Employed, Izmir-Turkey
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - role: UI Developer
-      time: 2012 - 2014
-      company: Amazon, London
+           - Store marketing analyze and develop products(games) according to results
+           - Unity Game development for Android, Windows.
+           - Adhere to, help create,maintain coding, production and quality assurance software standarts.
+           - Perform gap analysis and develop optimized road maps to support strategic initiatives.
+
+    - role: Waiter(Part-time 2020)
+      time: 2019 - 2020
+      company: Cactus Cantina, Alabama-USA
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-projects:
-    title: Projects
+           - Part-time Summer job.
+           - Customer service and support.
+           - Receive orders from customers.
+           - Receive payments by Credit card or cash.
+           - Help to bussers cleaning tables.
+
+    - role: Front Desk Associate & Computer Technician (Summer Work & Travel Program 2019)
+      time: 2019 - 2020
+      company: Brett-Robinson Vacation Rentals, Alabama-USA
+      details: |
+           - Summer Work & Travel Program job.
+           - Customer service and support.
+           - Check-in/out guests and check reservations.
+           - Receive payments by Credit card or cash.
+           - Help installing programs to other computers.
+           - Notify the IT technician of instantaneous errors.
+
+    - role: Waiter(Summer Work & Travel Program 2019)
+      time: 2018 - 2019
+      company: Zephyr Cove Resort, Nevada-USA
+      details: |
+           - Summer Work & Travel Program job.
+           - Customer service and support.
+           - Receive orders from customers.
+           - Receive payments by Credit card or cash.
+           - Help to bussers cleaning tables.
+
+    - role: Busser(Summer Work & Travel Program 2018)
+      time: 2017 - 2018
+      company: Zephyr Cove Resort, Nevada-USA
+      details: |
+           - Summer Work & Travel Program job.
+           - Customer service and support.
+           - Receive drink orders from customers.
+           - Cleaning dirty tables.
+           - Adjusting the seating arrangement.
+           -       
+Portfolio:
+    title: Projects and Games
     intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      My Portfolio
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: Treadmill Fall (Mobile Game, Unicode Games)
+        link: "https://play.google.com/store/apps/details?id=com.unicode.games.treadmillfall&hl=tr&gl=US"
+        tagline: "Hyper-Casual game that developed to order."
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+      - title: TAB Puzzle (Mobile Game, Unicode Games)
+        link: "https://play.google.com/store/apps/details?id=com.unicode.games.tabpuzzle&hl=tr&gl=US"
+        tagline: "Hyper-Casual game that developed to order."
 
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: Nail Rush (Mobile Game, Unicode Games)
+        link: "https://play.google.com/store/apps/details?id=com.unicode.games.nailrush&hl=tr&gl=US"
+        tagline: "Hyper-Casual game that developed to order."
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+      - title: Cup Challenge (Mobile Game, Unicode Games)
+        link: "https://play.google.com/store/apps/details?id=com.unicode.games.cup&hl=tr&gl=US"
+        tagline: "Hyper-Casual game that developed to order."
 
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      - title: Yes or No (Mobile Game, Unicode Games)
+        link: "https://play.google.com/store/apps/details?id=com.unicode.games.yesno&hl=tr&gl=US"
+        tagline: "Hyper-Casual game that developed to order."
+
+      - title: Luxury Car Chain (Mobile Game, Unicode Games)
+        link: "https://lnkd.in/d23jGUXb"
+        tagline: "Hyper-Casual game that developed to order."
+
+      - title: Bowling Rush 3D (BSc, Course Project Mobile Game)
+        link: "Not Available"
+        tagline: "Endless runner based game that controlling the bowling ball by tapping to screen "
+
+      - title: 
+        link: 
+        tagline: "Python based algorithm and problem wizard working with genetic algorithms."
 
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+      My Propjects
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: Gnaw-> Genetic Algorithm Wizard (Senior Project of Software Engineering)
+        link: "https://github.com/batuhansevinc/GeneticAlgorithmWizard-GNAW"
+        authors: E. Batuhan Sevinc, Efe Berk Dinc, Assoc. Prof. Kaya Oguz
+        conference: GBFY Turkey, 2020
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
     title: Skills &amp; Proficiency
@@ -190,6 +215,3 @@ skills:
 
       - name: Sketch & Photoshop
         level: 75%
-
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
