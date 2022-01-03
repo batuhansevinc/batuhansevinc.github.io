@@ -15,7 +15,7 @@ sidebar:
     email: eyupbatuhansevinc@gmail.com
     phone: 
     website: batuhansevinc.com #do not add http://
-    linkedin: batuhansevinc
+    linkedin: eyupbatuhansevinc
     xing: eyupbatuhansevinc
     github: batuhansevinc
     telegram: # add your nickname without '@' sign
@@ -25,7 +25,7 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    pdf: batuhansevinc.github.io/blob/main/cv.pdf
 
     languages:
       - idiom: Turkish
@@ -51,8 +51,8 @@ career-profile:
     title: Profile
     summary: |
             Sofware engineering student in senior class at Izmir University of Economics.
-           Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
-           Currently working as a freelance Junior & Mid Unity & Software Developer.
+            Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
+            Currently working as a freelance Junior & Mid Unity & Software Developer.
 
 education:
     - degree: BSc in Software Engineering
