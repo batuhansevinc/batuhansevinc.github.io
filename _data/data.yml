@@ -184,31 +184,5 @@ publications:
         authors: E. Batuhan Sevinc, Efe Berk Dinc, Assoc. Prof. Kaya Oguz
         conference: GBFY Turkey, 2020
 
-
-skills:
-    title: Skills & Proficiency
-
-    toolset:
-      - name: Unity
-        level: 90%
-        
-      - name: Python
-        level: 80%
-
-      - name: Javascript & jQuery
-        level: 80%
-
-      - name: C#
-        level: 90%
-
-      - name: HTML5 & CSS
-        level: 95%
-
-      - name: Ruby on Rails
-        level: 85%
-
-      - name: Sketch & Photoshop
-        level: 75%
-
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="https://batuhansevinc.me" target="_blank" rel="nofollow">Batuhan Sevinc</a>
