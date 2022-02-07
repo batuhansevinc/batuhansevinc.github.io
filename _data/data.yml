@@ -14,9 +14,9 @@ sidebar:
     # Sidebar links
     email: eyupbatuhansevinc@gmail.com
     phone: 
-    website: batuhansevinc.com #do not add http://
+    website: #do not add http://
     linkedin: eyupbatuhansevinc
-    xing: eyupbatuhansevinc
+    xing:
     github: batuhansevinc
     telegram: # add your nickname without '@' sign
     gitlab:
@@ -25,7 +25,7 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: https://www.batuhansevinc.software/cv.pdf
+    pdf: http://www.batuhansevinc.software/cv.pdf
 
     languages:
       - idiom: Turkish
@@ -146,6 +146,9 @@ projects:
     intro: >
       Games
     assignments:
+      - title: X-Flip Motorbike Game (Mobile Game)
+        link: "https://github.com/batuhansevinc/X-Flip"
+        tagline: "Hyper-Casual game that developed to order."
       - title: Treadmill Fall (Mobile Game, Unicode Games)
         link: "https://play.google.com/store/apps/details?id=com.unicode.games.treadmillfall&hl=tr&gl=US"
         tagline: "Hyper-Casual game that developed to order."
