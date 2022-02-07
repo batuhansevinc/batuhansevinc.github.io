@@ -144,7 +144,7 @@ experiences:
 projects:
     title: My Portfolio
     intro: >
-      Games
+     My Games
     assignments:
       - title: X-Flip Motorbike Game (Mobile Game)
         link: "https://github.com/batuhansevinc/X-Flip"
