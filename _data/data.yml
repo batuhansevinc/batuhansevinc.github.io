@@ -146,6 +146,9 @@ projects:
     intro: >
      My Games
     assignments:
+      - title: Picker3D [Clone] (Mobile Game)
+        link: "https://github.com/batuhansevinc/Picker3D-Clone"
+        tagline: "Github Link"
       - title: X-Flip Motorbike Game (Mobile Game)
         link: "https://github.com/batuhansevinc/X-Flip"
         tagline: "Github Link"
