@@ -8,7 +8,8 @@ sidebar:
 
     # Profile information
     name: Batuhan Sevinc
-    tagline: Unity Game Developer
+    tagline: Game Developer 
+             Software Engineer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -50,14 +51,14 @@ sidebar:
 career-profile:
      title: Profile
      summary: |
-            Senior class student in Software Engineering Department at Izmir University of Economics.
-            Freelance Junior Game Developer & Software Engineer with 2 plus years of experience.
-            Currently working as a freelance game developer.
+            Fresh graduated Software Engineer.
+            Unity Game Developer & Software Engineer with 4+ years of experience.
+            Currently working as a unity game developer (Casual, Hyper Casual, Hybrid Casual, Idle, Arcade).
 
 education:
     - degree: BSc in Software Engineering
       university: Izmir University of Economics
-      time: 2016 - present
+      time: 2016 - 2022
       details: |
         - Coordinate designs and implementation with QA to enable automated and manual testing.
         - Write unit tests for components.
@@ -76,11 +77,30 @@ education:
         - JAVA,C# Programming and project development.
         - Android Studio, Visual Studio, VS Code supported courses and developing project applications.
         - Mobile Game development courses.
-        - Awards: Honour Student certificate in 2014-2015 fall semester.
+        - Awards: High honour Student certificate in 2014-2015 fall semester.
 
 experiences:
     - role: Unity Game Developer
-      time: 2020 - Present
+      time: 2022 - 2022
+      company: Rodd Games, Izmir-Turkey
+      details: |
+          - Creating game structure (Design, Game Economy, Gameplay, Game events).
+          - Unit testing and bug fixes.
+          - Coding with OOP and Solid principles.
+          - Show the workflow on Git, Jira, Notion.
+          - Help to sprint tasks and work with cross-functional team including design and art.
+    - role: Unity Game Developer (Intern)
+      time: 2022 - 2022
+      company: Rodd Games, Izmir-Turkey
+      details: |
+          - Designing game economy system.
+          - Minor bug fixes for the developed games.
+          - Develop a 2D mobile game.
+          - Analyze and test code systems.
+          - Help to sprint tasks and work with cross-functional team including design and art.
+          - Understanding OOP, Solid pronciples.
+    - role: Unity Game Developer
+      time: 2020 - 2021
       company: Unicode Games, Izmir-Turkey
       details: |
           - Contribute ideas in a collaborative, supportive team environment.
