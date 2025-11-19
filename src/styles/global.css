@@ -3,42 +3,51 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-primary: 0 217 255;
-    --color-accent: 255 45 117;
-    --color-gold: 255 217 0;
-  }
-
   body {
-    @apply bg-dark-950 text-white antialiased;
+    @apply bg-black text-white antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
   html {
     scroll-behavior: smooth;
   }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-terminal text-black;
+  }
 }
 
 @layer components {
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary-500 via-accent-500 to-gold-500 bg-clip-text text-transparent;
+  /* Terminal-inspired components */
+  .terminal-box {
+    @apply bg-gray-950 border border-gray-800 rounded-lg p-6;
   }
 
-  .glass-effect {
-    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  .terminal-prompt {
+    @apply font-mono text-terminal;
   }
 
-  .neon-glow {
-    box-shadow: 0 0 20px rgba(var(--color-primary), 0.5),
-                0 0 40px rgba(var(--color-primary), 0.3);
+  .terminal-cursor {
+    @apply inline-block w-2 h-5 bg-terminal animate-cursor ml-1;
   }
 
-  .card-3d {
-    @apply transition-all duration-300 ease-out;
-    transform-style: preserve-3d;
+  /* Minimal hover effects */
+  .hover-terminal {
+    @apply transition-colors duration-200 hover:text-terminal;
   }
 
-  .card-3d:hover {
-    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  .hover-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-terminal after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  /* Clean borders */
+  .border-subtle {
+    @apply border-gray-800;
+  }
+
+  /* Monospace headings */
+  .heading-mono {
+    @apply font-mono font-bold tracking-tight;
   }
 }

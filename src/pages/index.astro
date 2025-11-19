@@ -14,79 +14,31 @@ import Contact from '../components/Contact.astro';
   <Portfolio />
   <Contact />
 
-  <!-- Three.js Particles Script -->
-  <script src="../scripts/particles.ts"></script>
-
-  <!-- GSAP Animations Script -->
+  <!-- Minimal Animations -->
   <script>
-    import { gsap } from 'gsap';
-    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    // Simple fade-in on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
 
-    gsap.registerPlugin(ScrollTrigger);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
 
-    // Initialize animations when DOM is loaded
     document.addEventListener('DOMContentLoaded', () => {
-      // About section animation
-      gsap.from('#about', {
-        scrollTrigger: {
-          trigger: '#about',
-          start: 'top 80%',
-          end: 'bottom 20%',
-          toggleActions: 'play none none reverse',
-        },
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        ease: 'power3.out',
-      });
-
-      // Skills section animation
-      gsap.from('.skill-card', {
-        scrollTrigger: {
-          trigger: '#skills',
-          start: 'top 70%',
-          end: 'bottom 20%',
-          toggleActions: 'play none none reverse',
-        },
-        opacity: 0,
-        y: 50,
-        stagger: 0.1,
-        duration: 0.8,
-        ease: 'power3.out',
-      });
-
-      // Portfolio section animation
-      gsap.from('.game-card', {
-        scrollTrigger: {
-          trigger: '#portfolio',
-          start: 'top 70%',
-          end: 'bottom 20%',
-          toggleActions: 'play none none reverse',
-        },
-        opacity: 0,
-        scale: 0.9,
-        y: 50,
-        stagger: 0.15,
-        duration: 0.8,
-        ease: 'back.out(1.2)',
-      });
-
-      // Contact section animation
-      gsap.from('#contact > .container > *', {
-        scrollTrigger: {
-          trigger: '#contact',
-          start: 'top 70%',
-          toggleActions: 'play none none reverse',
-        },
-        opacity: 0,
-        y: 30,
-        stagger: 0.2,
-        duration: 0.8,
-        ease: 'power3.out',
+      // Observe sections for fade-in
+      document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
       });
 
       // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
           e.preventDefault();
           const href = this.getAttribute('href');
