@@ -5,82 +5,44 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Modern color palette for game developer theme
-        primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#00d9ff', // Cyan accent
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-          950: '#082f49',
-        },
-        accent: {
-          50: '#fef1f7',
-          100: '#fee5f0',
-          200: '#fecce3',
-          300: '#ffa3ca',
-          400: '#ff69a8',
-          500: '#ff2d75', // Magenta accent
-          600: '#f01d67',
-          700: '#d0135a',
-          800: '#ab1550',
-          900: '#8e1547',
-          950: '#570624',
-        },
-        gold: {
-          50: '#fffef0',
-          100: '#fffbc7',
-          200: '#fff892',
-          300: '#ffd900', // Gold accent
-          400: '#ffd000',
-          500: '#ffc107',
-          600: '#f59e0b',
-          700: '#d97706',
-          800: '#b45309',
-          900: '#92400e',
-        },
-        dark: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
-          950: '#0a0e27', // Deep navy
+        // Minimalist monochrome + terminal green accent
+        terminal: '#00ff41',
+        gray: {
+          50: '#fafafa',
+          100: '#f5f5f5',
+          200: '#e5e5e5',
+          300: '#d4d4d4',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+          950: '#0a0a0a',
         },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
       },
       animation: {
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
+        'fade-in': 'fadeIn 0.6s ease-out',
+        'cursor': 'blink 1s step-end infinite',
       },
       keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-20px)' },
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        glow: {
-          '0%': {
-            boxShadow: '0 0 5px rgb(0, 217, 255), 0 0 10px rgb(0, 217, 255)',
-          },
-          '100%': {
-            boxShadow: '0 0 20px rgb(0, 217, 255), 0 0 30px rgb(0, 217, 255)',
-          },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
         },
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
       },
     },
   },
