@@ -3,3 +3,12 @@
 node_modules
 .vscode
 _site/
+
+# Security - Never commit private keys and certificates
+*.key
+*.crt
+*.ca-bundle
+*.pem
+*.p12
+.env.local
+.env.*.local

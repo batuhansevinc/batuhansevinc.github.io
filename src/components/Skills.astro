@@ -1,0 +1,157 @@
+---
+// Skills section with animated icons
+interface Skill {
+  name: string;
+  icon: string;
+  level: number; // 1-100
+  category: string;
+}
+
+const skills: Skill[] = [
+  // Game Development
+  { name: "Unity", icon: "unity", level: 95, category: "Game Development" },
+  { name: "C#", icon: "csharp", level: 90, category: "Game Development" },
+  { name: "Game Design", icon: "gamepad", level: 85, category: "Game Development" },
+  { name: "Mobile Development", icon: "mobile", level: 90, category: "Game Development" },
+
+  // Programming
+  { name: "JavaScript", icon: "javascript", level: 85, category: "Programming" },
+  { name: "TypeScript", icon: "typescript", level: 80, category: "Programming" },
+  { name: "Python", icon: "python", level: 75, category: "Programming" },
+  { name: "Java", icon: "java", level: 70, category: "Programming" },
+
+  // Tools & Technologies
+  { name: "Git", icon: "git", level: 90, category: "Tools" },
+  { name: "Docker", icon: "docker", level: 70, category: "Tools" },
+  { name: "Firebase", icon: "firebase", level: 80, category: "Tools" },
+  { name: "Visual Studio", icon: "vscode", level: 95, category: "Tools" },
+];
+
+const categories = [...new Set(skills.map(s => s.category))];
+---
+
+<section id="skills" class="py-24 px-6 bg-dark-950">
+  <div class="container mx-auto max-w-7xl">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-display font-bold mb-4">
+        Skills & <span class="gradient-text">Expertise</span>
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+        Technologies and tools I use to bring games to life
+      </p>
+    </div>
+
+    <!-- Skills by Category -->
+    {categories.map((category) => (
+      <div class="mb-16">
+        <h3 class="text-2xl font-display font-bold mb-8 text-primary-400">
+          {category}
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {skills
+            .filter((skill) => skill.category === category)
+            .map((skill) => (
+              <div class="group skill-card p-6 rounded-xl glass-effect border border-white/10 hover:border-primary-500/50 transition-all duration-300 hover:scale-105">
+                <!-- Icon -->
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary-500/20 to-accent-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    {skill.icon === "unity" && (
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0L3 7v10l9 7 9-7V7l-9-7zm5.5 11.5L15 14l-3-1.5-3 1.5-2.5-2.5L9 9l3 1.5L15 9l2.5 2.5z"/>
+                      </svg>
+                    )}
+                    {skill.icon === "csharp" && (
+                      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zM9.426 7.12c.974 0 1.753.79 1.753 1.764 0 .974-.779 1.763-1.753 1.763-.974 0-1.763-.789-1.763-1.763 0-.974.789-1.764 1.763-1.764zm5.148 0c.974 0 1.753.79 1.753 1.764 0 .974-.779 1.763-1.753 1.763-.974 0-1.753-.789-1.753-1.763 0-.974.779-1.764 1.753-1.764zM12 14c2.033 0 3.827.948 5.013 2.428l-1.589.875c-.797-1.005-2.011-1.65-3.424-1.65-1.413 0-2.627.645-3.424 1.65l-1.589-.875C8.173 14.948 9.967 14 12 14z"/>
+                      </svg>
+                    )}
+                    {skill.icon === "gamepad" && (
+                      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+                      </svg>
+                    )}
+                    {skill.icon === "mobile" && (
+                      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                      </svg>
+                    )}
+                    {skill.icon === "javascript" && (
+                      <svg class="w-8 h-8" viewBox="0 0 24 24">
+                        <path fill="#F0DB4F" d="M0 0h24v24H0V0z"/>
+                        <path fill="#323330" d="M6.4 17.6c.4.8 1.2 1.4 2.4 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.7-1.6l-.6-.2c-1.7-.7-2.8-1.6-2.8-3.5 0-1.8 1.4-3.1 3.5-3.1 1.5 0 2.6.5 3.4 1.9l-1.9 1.2c-.4-.7-.8-1-1.5-1-.7 0-1.1.4-1.1 1 0 .7.4 1 1.4 1.4l.6.2c2 .9 3.1 1.7 3.1 3.7 0 2.1-1.6 3.3-3.8 3.3-2.1 0-3.5-1-4.2-2.3l2-1.2zm8.8-8.2h2.3v9c0 2.3-1.4 3.4-3.5 3.4-.8 0-1.6-.2-2.2-.5l.4-1.8c.4.2.9.3 1.4.3.9 0 1.5-.4 1.5-1.8v-8.6z"/>
+                      </svg>
+                    )}
+                    {skill.icon === "typescript" && (
+                      <svg class="w-8 h-8" viewBox="0 0 24 24">
+                        <rect width="24" height="24" fill="#3178C6" rx="2"/>
+                        <path fill="#fff" d="M13.5 15.5v3h1.75v-3H18v-1.25h-6.75V15.5h2.25zm-6 0v3h1.75v-3H12v-1.25H6V15.5h1.5zm6-6v1.25H18V9.5h-4.5zm-6 0v1.25H12V9.5H7.5zM13.5 6v1.25h4.25V9.5H18V6h-4.5zM6 6v1.25h1.5V9.5H9V6H6z"/>
+                      </svg>
+                    )}
+                    {skill.icon === "python" && (
+                      <svg class="w-8 h-8" viewBox="0 0 24 24">
+                        <path fill="#3776AB" d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969c0 6.18 3.403 5.96 3.403 5.96h2.03v-2.867s-.109-3.403 3.35-3.403h5.766s3.24.052 3.24-3.13V3.202S18.28 0 11.914 0zM8.743 1.857a1.04 1.04 0 11-.002 2.08 1.04 1.04 0 01.002-2.08z"/>
+                        <path fill="#FFD43B" d="M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752h-5.814v-.826h8.121s3.9.445 3.9-5.735c0-6.18-3.403-5.96-3.403-5.96h-2.03v2.867s.109 3.403-3.35 3.403H9.451s-3.24-.052-3.24 3.13v5.327S5.72 24 12.086 24zm3.171-1.857a1.04 1.04 0 11.002-2.08 1.04 1.04 0 01-.002 2.08z"/>
+                      </svg>
+                    )}
+                    {skill.icon === "java" && (
+                      <svg class="w-8 h-8" viewBox="0 0 24 24">
+                        <path fill="#EA2D2E" d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218"/>
+                        <path fill="#0074BD" d="M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573"/>
+                        <path fill="#EA2D2E" d="M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118"/>
+                        <path fill="#0074BD" d="M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627"/>
+                        <path fill="#EA2D2E" d="M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"/>
+                      </svg>
+                    )}
+                    {skill.icon === "git" && (
+                      <svg class="w-8 h-8" fill="#F05032" viewBox="0 0 24 24">
+                        <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.605-.406-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
+                      </svg>
+                    )}
+                    {skill.icon === "docker" && (
+                      <svg class="w-8 h-8" fill="#2496ED" viewBox="0 0 24 24">
+                        <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338 0-.676.03-1.01.09-.808-2.602-3.044-3.962-3.108-4.004l-.631-.356-.438.594s-.526.727-.854 1.696c-.371 1.09-.448 2.343-.097 3.534-1.162.453-3.14.512-3.14.512H.1c-.05.119-.537 1.334-.569 3.173-.015.931.111 2.018.483 3.145.408 1.244 1.015 2.312 1.797 3.188 1.295 1.451 3.094 2.471 5.346 3.027 3.05.753 6.38.447 9.304-.908 2.433-1.124 4.39-2.983 5.805-5.522.902.034 2.86-.166 3.862-1.302.067-.075.635-.802.862-1.826l.057-.224-.643-.347zM10.548 11.078h-2.12a.186.186 0 01-.185-.185V9.006c0-.102.084-.186.186-.186h2.119c.102 0 .185.084.185.186v1.887a.185.185 0 01-.185.185"/>
+                      </svg>
+                    )}
+                    {skill.icon === "firebase" && (
+                      <svg class="w-8 h-8" viewBox="0 0 24 24">
+                        <path fill="#FFA000" d="M3.89 15.672L6.255.461A.542.542 0 017.27.288l2.543 4.771zm16.794 3.692l-2.25-14.09a.54.54 0 00-.919-.295L3.316 19.365z"/>
+                        <path fill="#F57C00" d="M14.3 7.147l-1.82-3.482a.542.542 0 00-.96 0L3.316 19.365z"/>
+                        <path fill="#FFCA28" d="M20.683 19.364L18.981 18.04 7.216 10.82 3.316 19.365a.545.545 0 00.8.67l8.795-4.922z"/>
+                        <path fill="#FFA000" d="M8.546 8.145L3.89 15.672l2.366-15.211z"/>
+                      </svg>
+                    )}
+                    {skill.icon === "vscode" && (
+                      <svg class="w-8 h-8" fill="#007ACC" viewBox="0 0 24 24">
+                        <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+                      </svg>
+                    )}
+                  </div>
+                  <span class="text-3xl font-bold text-primary-500">{skill.level}%</span>
+                </div>
+
+                <!-- Name -->
+                <h4 class="font-display font-semibold text-lg mb-3 text-white">
+                  {skill.name}
+                </h4>
+
+                <!-- Progress Bar -->
+                <div class="w-full h-2 bg-dark-800 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full transition-all duration-1000"
+                    style={`width: ${skill.level}%`}
+                  ></div>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .skill-card {
+    transform-style: preserve-3d;
+  }
+</style>
