@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0 217 255;
+    --color-accent: 255 45 117;
+    --color-gold: 255 217 0;
+  }
+
+  body {
+    @apply bg-dark-950 text-white antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 via-accent-500 to-gold-500 bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 20px rgba(var(--color-primary), 0.5),
+                0 0 40px rgba(var(--color-primary), 0.3);
+  }
+
+  .card-3d {
+    @apply transition-all duration-300 ease-out;
+    transform-style: preserve-3d;
+  }
+
+  .card-3d:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  }
+}
