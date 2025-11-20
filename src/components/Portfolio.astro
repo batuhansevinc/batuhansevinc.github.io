@@ -1,5 +1,5 @@
 ---
-// Minimalist Portfolio Section
+// Slate Minimalist Portfolio Section
 interface Project {
   title: string;
   description: string;
@@ -12,102 +12,106 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Hyper Casual Runner",
-    description: "Fast-paced endless runner with procedural level generation and smooth controls",
-    tech: ["Unity", "C#", "Mobile"],
+    description: "Fast-paced endless runner with procedural level generation and smooth controls. Implemented optimization techniques for 60fps on mid-range devices.",
+    tech: ["Unity", "C#", "Mobile Optimization"],
     year: "2023",
     featured: true
   },
   {
     title: "Idle Factory Tycoon",
-    description: "Strategic idle game with automation systems and prestige mechanics",
-    tech: ["Unity", "C#", "Optimization"],
+    description: "Strategic idle game with automation systems and prestige mechanics. Built scalable save system handling millions of numerical values.",
+    tech: ["Unity", "C#", "System Architecture"],
     year: "2023",
     featured: true
   },
   {
     title: "Puzzle Match 3D",
-    description: "Innovative 3D matching puzzle with physics-based mechanics",
+    description: "Innovative 3D matching puzzle with physics-based mechanics. Developed custom physics solver for stable stacking behavior.",
     tech: ["Unity", "C#", "3D Physics"],
     year: "2022"
   },
   {
     title: "Arcade Shooter",
-    description: "Classic space shooter with boss battles and weapon systems",
-    tech: ["Unity", "C#", "Gameplay"],
+    description: "Classic space shooter with boss battles and weapon systems. Created modular weapon system with 20+ unique combinations.",
+    tech: ["Unity", "C#", "Game Design"],
     year: "2022",
     github: "https://github.com/batuhansevinc/arcade-shooter"
   },
   {
     title: "Merge Kingdom",
-    description: "Merge mechanics combined with kingdom building strategy",
-    tech: ["Unity", "C#", "Systems"],
+    description: "Merge mechanics combined with kingdom building strategy. Implemented efficient grid system for thousands of objects.",
+    tech: ["Unity", "C#", "Data Structures"],
     year: "2021"
   },
   {
     title: "Stack Challenge",
-    description: "Addictive stacking game with precision timing mechanics",
-    tech: ["Unity", "C#", "Mobile"],
+    description: "Addictive stacking game with precision timing mechanics. Optimized for one-handed mobile gameplay.",
+    tech: ["Unity", "C#", "Mobile UX"],
     year: "2021"
   }
 ];
 ---
 
-<section id="projects" class="py-24 px-6 bg-gray-950">
+<section id="projects" class="section">
   <div class="max-w-6xl mx-auto">
-    
+
     <!-- Section Header -->
     <div class="mb-16 space-y-4">
-      <div class="font-mono text-sm text-gray-600">// Projects</div>
-      <h2 class="text-4xl md:text-5xl font-mono font-bold">
-        Selected <span class="text-terminal">Work</span>
+      <p class="text-accent text-sm font-medium uppercase tracking-wider">Portfolio</p>
+      <h2 class="heading-lg text-slate-text">
+        Selected Work
       </h2>
-      <p class="text-gray-400 max-w-2xl">
-        Game development projects showcasing technical expertise and problem-solving
+      <p class="text-slate-muted text-lg max-w-2xl">
+        Game development projects showcasing technical expertise, performance optimization, and creative problem-solving.
       </p>
     </div>
 
     <!-- Projects Grid -->
-    <div class="space-y-4">
+    <div class="space-y-6">
       {projects.map((project) => (
-        <div class="group terminal-box hover:border-terminal transition-all duration-300">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            
-            <!-- Project Info -->
-            <div class="flex-1 space-y-3">
-              <div class="flex items-center gap-3">
-                <h3 class="font-mono text-xl font-semibold group-hover:text-terminal transition-colors">
-                  {project.title}
-                </h3>
-                {project.featured && (
-                  <span class="font-mono text-xs px-2 py-1 bg-terminal text-black">FEATURED</span>
-                )}
+        <div class="card group">
+          <div class="flex flex-col gap-4">
+
+            <!-- Project Header -->
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-2">
+                  <h3 class="text-2xl font-bold text-slate-text group-hover:text-accent transition-colors">
+                    {project.title}
+                  </h3>
+                  {project.featured && (
+                    <span class="text-xs font-medium px-2 py-1 bg-accent/10 text-accent border border-accent/20 rounded">
+                      Featured
+                    </span>
+                  )}
+                </div>
+                <p class="text-slate-muted leading-relaxed">
+                  {project.description}
+                </p>
               </div>
 
-              <p class="text-gray-400 text-sm max-w-2xl">
-                {project.description}
-              </p>
+              <span class="text-sm text-slate-muted font-mono shrink-0">{project.year}</span>
+            </div>
 
+            <!-- Project Footer -->
+            <div class="flex items-center justify-between gap-4 pt-2 border-t border-slate-border">
               <div class="flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
-                  <span class="font-mono text-xs text-gray-500 border border-gray-800 px-2 py-1">
+                  <span class="text-xs font-medium text-slate-muted bg-slate-bg px-3 py-1 rounded-full border border-slate-border">
                     {tech}
                   </span>
                 ))}
               </div>
-            </div>
 
-            <!-- Project Meta -->
-            <div class="flex items-center gap-6 font-mono text-sm">
-              <span class="text-gray-600">{project.year}</span>
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover-terminal inline-flex items-center gap-1"
+                  class="link flex items-center gap-1 text-sm"
                 >
-                  <span class="text-gray-600">→</span>
-                  <span>github</span>
+                  <span>View Source</span>
+                  <span>→</span>
                 </a>
               )}
             </div>
@@ -123,10 +127,9 @@ const projects: Project[] = [
         href="https://github.com/batuhansevinc"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 font-mono text-sm hover-terminal"
+        class="btn-secondary"
       >
-        <span>View all projects on GitHub</span>
-        <span class="text-terminal">→</span>
+        View All Projects on GitHub
       </a>
     </div>
 

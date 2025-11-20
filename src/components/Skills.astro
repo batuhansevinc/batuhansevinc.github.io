@@ -1,8 +1,8 @@
 ---
-// Minimalist Skills Section
-interface Skill {
+// Slate Minimalist Skills Section
+interface SkillItem {
   name: string;
-  level: string; // Beginner, Intermediate, Advanced, Expert
+  level: string;
 }
 
 const skills = {
@@ -25,31 +25,40 @@ const skills = {
     { name: "CI/CD", level: "Advanced" }
   ]
 };
+
+const expertise = [
+  "4+ years of professional game development",
+  "Mobile game optimization for millions of users",
+  "System architecture and scalable code design",
+  "Performance profiling and memory optimization"
+];
 ---
 
-<section id="skills" class="py-24 px-6">
+<section id="skills" class="section bg-slate-surface/30">
   <div class="max-w-6xl mx-auto">
-    
+
     <!-- Section Header -->
     <div class="mb-16 space-y-4">
-      <div class="font-mono text-sm text-gray-600">// Skills</div>
-      <h2 class="text-4xl md:text-5xl font-mono font-bold">
-        Technical <span class="text-terminal">Stack</span>
+      <p class="text-accent text-sm font-medium uppercase tracking-wider">Skills</p>
+      <h2 class="heading-lg text-slate-text">
+        Technical Stack
       </h2>
     </div>
 
     <!-- Skills Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
       {Object.entries(skills).map(([category, items]) => (
-        <div class="space-y-6">
-          <h3 class="font-mono text-lg text-terminal border-b border-gray-900 pb-2">
+        <div class="card">
+          <h3 class="text-xl font-bold text-slate-text mb-6 pb-3 border-b border-slate-border">
             {category}
           </h3>
-          <div class="space-y-3">
-            {items.map((skill) => (
-              <div class="flex items-center justify-between font-mono text-sm">
-                <span class="text-gray-300">{skill.name}</span>
-                <span class="text-gray-600 text-xs">{skill.level}</span>
+          <div class="space-y-4">
+            {items.map((skill: SkillItem) => (
+              <div class="flex items-center justify-between">
+                <span class="text-slate-text font-medium">{skill.name}</span>
+                <span class="text-xs text-slate-muted font-mono bg-slate-bg px-2 py-1 rounded border border-slate-border">
+                  {skill.level}
+                </span>
               </div>
             ))}
           </div>
@@ -57,16 +66,17 @@ const skills = {
       ))}
     </div>
 
-    <!-- Terminal Command Visualization -->
-    <div class="mt-16 terminal-box font-mono text-sm space-y-2">
-      <div class="text-gray-600">$ skills --list --format=compact</div>
-      <div class="text-gray-400 pl-4">
-        <div>Unity [████████████████████] 95%</div>
-        <div>C# [███████████████████░] 90%</div>
-        <div>TypeScript [██████████████░░░░░] 80%</div>
-        <div>System Design [████████████████░░] 85%</div>
+    <!-- Expertise Highlights -->
+    <div class="card bg-slate-surface">
+      <h3 class="text-xl font-bold text-slate-text mb-6">Expertise Highlights</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {expertise.map((item) => (
+          <div class="flex items-start gap-3">
+            <span class="text-accent text-lg shrink-0">→</span>
+            <span class="text-slate-muted">{item}</span>
+          </div>
+        ))}
       </div>
-      <div class="text-terminal pt-2">✓ 4+ years of professional experience</div>
     </div>
 
   </div>
