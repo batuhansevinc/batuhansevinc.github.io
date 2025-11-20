@@ -1,86 +1,74 @@
 ---
-// Minimalist Hero - Terminal Inspired
+// Slate Minimalist Hero Component
 ---
 
-<section id="hero" class="min-h-screen flex items-center justify-center px-6 py-20">
-  <div class="max-w-4xl w-full space-y-12 animate-fade-in">
+<section id="hero" class="section min-h-screen flex items-center justify-center">
+  <div class="max-w-5xl w-full space-y-8 animate-fade-in">
 
-    <!-- Terminal Prompt Header -->
+    <!-- Main Content -->
     <div class="space-y-6">
-      <div class="font-mono text-sm text-gray-500">
-        <span class="text-terminal">$</span> whoami
-      </div>
+      <!-- Greeting -->
+      <p class="text-accent text-lg font-medium">Hi, I'm</p>
 
-      <h1 class="text-5xl md:text-7xl font-mono font-bold tracking-tight">
-        <span class="text-white">Batuhan Sevinc</span>
+      <!-- Name -->
+      <h1 class="heading-xl text-slate-text">
+        Batuhan Sevinc
       </h1>
 
-      <div class="font-mono text-sm text-gray-500 space-y-1">
-        <div><span class="text-terminal">$</span> cat role.txt</div>
-        <div class="pl-4 text-xl md:text-2xl text-white">Software Engineer</div>
-      </div>
+      <!-- Role -->
+      <h2 class="text-3xl md:text-5xl font-bold text-slate-muted">
+        Software Engineer
+      </h2>
 
-      <div class="font-mono text-sm text-gray-500 space-y-1">
-        <div><span class="text-terminal">$</span> cat expertise.txt</div>
-        <div class="pl-4 text-base md:text-lg text-gray-400 max-w-2xl">
-          Unity Game Developer | 4+ years experience<br/>
-          Specializing in mobile games, system architecture, and performance optimization
-        </div>
-      </div>
+      <!-- Description -->
+      <p class="text-lg md:text-xl text-slate-muted max-w-2xl leading-relaxed">
+        Unity Game Developer with 4+ years of experience. Specializing in mobile games,
+        system architecture, and performance optimization.
+      </p>
     </div>
 
-    <!-- Actions -->
-    <div class="space-y-4">
-      <div class="font-mono text-sm text-gray-500">
-        <span class="text-terminal">$</span> ./execute-commands.sh
-      </div>
-
-      <div class="flex flex-wrap gap-4">
-        <a
-          href="#projects"
-          class="font-mono text-sm px-6 py-3 border border-gray-700 hover:border-terminal hover:text-terminal transition-colors duration-200"
-        >
-          <span class="text-terminal">→</span> view_projects()
-        </a>
-
-        <a
-          href="/EyupBatuhanSevinc_Portfolio.pdf"
-          download
-          class="font-mono text-sm px-6 py-3 bg-gray-900 border border-gray-700 hover:border-terminal hover:text-terminal transition-colors duration-200"
-        >
-          <span class="text-terminal">↓</span> download_cv()
-        </a>
-      </div>
+    <!-- CTA Buttons -->
+    <div class="flex flex-wrap gap-4 pt-6">
+      <a href="#projects" class="btn-primary">
+        View Projects
+      </a>
+      <a href="/EyupBatuhanSevinc_Portfolio.pdf" download class="btn-secondary">
+        Download CV
+      </a>
     </div>
 
     <!-- Social Links -->
-    <div class="space-y-3 pt-8 border-t border-gray-900">
-      <div class="font-mono text-xs text-gray-600">// Connect</div>
-      <div class="flex flex-wrap gap-6 font-mono text-sm">
-        <a href="https://github.com/batuhansevinc" target="_blank" rel="noopener noreferrer" class="hover-terminal inline-flex items-center gap-2">
-          <span class="text-gray-600">→</span>
-          <span>github</span>
-        </a>
-        <a href="https://linkedin.com/in/eyupbatuhansevinc" target="_blank" rel="noopener noreferrer" class="hover-terminal inline-flex items-center gap-2">
-          <span class="text-gray-600">→</span>
-          <span>linkedin</span>
-        </a>
-        <a href="https://twitter.com/bthnsvnc" target="_blank" rel="noopener noreferrer" class="hover-terminal inline-flex items-center gap-2">
-          <span class="text-gray-600">→</span>
-          <span>twitter</span>
-        </a>
-        <a href="mailto:eyupbatuhansevinc@gmail.com" class="hover-terminal inline-flex items-center gap-2">
-          <span class="text-gray-600">→</span>
-          <span>email</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-      <div class="font-mono text-xs text-gray-600">
-        <span class="text-terminal">↓</span> scroll
-      </div>
+    <div class="flex flex-wrap gap-6 pt-8 border-t border-slate-border">
+      <a
+        href="https://github.com/batuhansevinc"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link text-slate-muted hover:text-accent transition-colors"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://linkedin.com/in/eyupbatuhansevinc"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link text-slate-muted hover:text-accent transition-colors"
+      >
+        LinkedIn
+      </a>
+      <a
+        href="https://twitter.com/bthnsvnc"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link text-slate-muted hover:text-accent transition-colors"
+      >
+        Twitter
+      </a>
+      <a
+        href="mailto:eyupbatuhansevinc@gmail.com"
+        class="link text-slate-muted hover:text-accent transition-colors"
+      >
+        Email
+      </a>
     </div>
 
   </div>
