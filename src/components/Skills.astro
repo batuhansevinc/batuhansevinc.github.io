@@ -1,18 +1,51 @@
 ---
-// GitHub Topics/Tags Style Skills
+// GitHub Topics/Tags Style Skills - Based on CV
 const skillTags = [
-  "Unity", "C#", "Game Development", "Mobile Games",
-  "Performance Optimization", "System Architecture", "TypeScript", "JavaScript",
-  "Python", "Java", "Git", "Docker", "Firebase", "CI/CD",
-  "3D Physics", "Procedural Generation", "Mobile Optimization",
-  "Data Structures", "Algorithms", "Game Design", "UX Design"
+  // Tools & Pipeline Development
+  "Unity Editor Extensions", "Custom Tools", "Automation", "CI/CD", "Jenkins",
+  "Unity Test Framework", "Addressables", "AssetBundles", "ScriptableObjects",
+
+  // Languages & Core
+  "C#", "Python", "Unity", "Shader Graph",
+
+  // Game Engineering & Optimization
+  "Mobile Performance", "IL2CPP", "Burst Compiler", "Jobs System",
+  "DOTS/ECS", "Memory Optimization", "Profiling",
+
+  // Architecture & Patterns
+  "Zenject", "UniTask", "UniRx", "SOLID", "Event-Driven Architecture",
+  "Dependency Injection", "Reactive Programming",
+
+  // SDKs & Platforms
+  "Firebase", "Applovin", "Facebook SDK", "Admob", "GameAnalytics", "Adjust",
+
+  // Tools & Workflow
+  "Git", "Jira", "Protobuf", "Remote Config",
+
+  // Game Tech
+  "DoTween", "A* Pathfinding", "Physics Simulation"
 ];
 
 const topLanguages = [
-  { name: "C#", percentage: 85, color: "bg-green-500" },
-  { name: "TypeScript", percentage: 10, color: "bg-blue-500" },
-  { name: "Python", percentage: 3, color: "bg-yellow-500" },
-  { name: "Other", percentage: 2, color: "bg-slate-600" }
+  { name: "C#", percentage: 90, color: "bg-green-500" },
+  { name: "Python", percentage: 7, color: "bg-yellow-500" },
+  { name: "HLSL/Shaders", percentage: 2, color: "bg-purple-500" },
+  { name: "Other", percentage: 1, color: "bg-slate-600" }
+];
+
+const coreCompetencies = [
+  {
+    title: "Tools & Pipeline Development",
+    skills: ["Unity Editor Extensions", "Custom No-Code Tools", "Automation Scripts", "CI/CD (Jenkins)", "Addressables & AssetBundles"]
+  },
+  {
+    title: "Game Engineering & Optimization",
+    skills: ["Mobile Performance Tuning", "Burst & Jobs System", "DOTS/ECS", "Profiling & Bottleneck Analysis", "Memory & GC Optimization"]
+  },
+  {
+    title: "Architecture & Patterns",
+    skills: ["SOLID Principles", "Modular & Event-Driven Systems", "Dependency Injection (Zenject)", "Reactive Programming (UniRx, UniTask)"]
+  }
 ];
 ---
 
@@ -35,8 +68,27 @@ const topLanguages = [
       </div>
     </div>
 
+    <!-- Core Competencies -->
+    <div class="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+      {coreCompetencies.map((category) => (
+        <div class="card">
+          <h3 class="text-lg font-semibold text-slate-text mb-4 pb-3 border-b border-slate-border">
+            {category.title}
+          </h3>
+          <ul class="space-y-2">
+            {category.skills.map((skill) => (
+              <li class="flex items-start gap-2 text-sm text-slate-muted">
+                <span class="text-accent mt-0.5">▸</span>
+                <span>{skill}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
     <!-- Languages Breakdown - GitHub Style -->
-    <div class="card">
+    <div class="card mb-12">
       <h3 class="text-lg font-semibold text-slate-text mb-4">
         Top Languages
       </h3>
@@ -67,18 +119,22 @@ const topLanguages = [
     </div>
 
     <!-- Experience Highlights -->
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
       <div class="card text-center">
-        <div class="text-3xl font-bold text-accent mb-2">4+</div>
-        <div class="text-sm text-slate-muted">Years of Experience</div>
+        <div class="text-3xl font-bold text-accent mb-2">5+</div>
+        <div class="text-sm text-slate-muted">Years Experience</div>
       </div>
       <div class="card text-center">
-        <div class="text-3xl font-bold text-accent mb-2">15+</div>
-        <div class="text-sm text-slate-muted">Projects Delivered</div>
+        <div class="text-3xl font-bold text-accent mb-2">35+</div>
+        <div class="text-sm text-slate-muted">Projects Shipped</div>
       </div>
       <div class="card text-center">
-        <div class="text-3xl font-bold text-accent mb-2">1M+</div>
+        <div class="text-3xl font-bold text-accent mb-2">500K+</div>
         <div class="text-sm text-slate-muted">Total Downloads</div>
+      </div>
+      <div class="card text-center">
+        <div class="text-3xl font-bold text-accent mb-2">-50%</div>
+        <div class="text-sm text-slate-muted">Avg. Perf. Gain</div>
       </div>
     </div>
 
