@@ -6,62 +6,72 @@ interface Project {
   tech: string[];
   language: string;
   year: string;
+  company?: string;
   github?: string;
   featured?: boolean;
   stats?: {
-    users?: string;
-    downloads?: string;
+    metric?: string;
+    value?: string;
   };
 }
 
 const projects: Project[] = [
   {
-    title: "Hyper Casual Runner",
-    description: "Fast-paced endless runner with procedural level generation and smooth controls. Implemented optimization techniques for 60fps on mid-range devices.",
-    tech: ["Unity", "C#", "Mobile Optimization"],
+    title: "Match-3 LiveOps Platform",
+    description: "Comprehensive ecosystem of tools including custom level editor, admin management suite, and LiveOps control panel. Built scalable backend with Firebase, battle pass config, daily rewards, and chat moderation systems.",
+    tech: ["Unity Editor Extensions", "Firebase", "Admin Tools", "CI/CD"],
+    language: "C#",
+    year: "2025",
+    company: "VELO Games",
+    featured: true,
+    stats: { metric: "Tools Built", value: "10+ Systems" }
+  },
+  {
+    title: "Pizza Guys",
+    description: "Co-created new mechanics and in-game content. Partnered with UA/Marketing on ad concepts achieving significant KPI improvements: CPI reduced $1.44→$0.97, D0 Playtime increased 737s→1895s, D7 Retention improved 4%→15%.",
+    tech: ["Unity", "C#", "UA Optimization", "LiveOps"],
+    language: "C#",
+    year: "2024",
+    company: "Rodd Games",
+    featured: true,
+    stats: { metric: "D7 Retention", value: "15%" }
+  },
+  {
+    title: "Pixel Warriors - Save System",
+    description: "Optimized save/load pipeline using Google Protobuf, cutting serialization times by ~50% and dramatically improving scene transition UX for better player experience.",
+    tech: ["Unity", "Protobuf", "Performance", "Data Architecture"],
+    language: "C#",
+    year: "2024",
+    company: "Rodd Games",
+    stats: { metric: "Load Time", value: "-50%" }
+  },
+  {
+    title: "Sort Away - Build Optimization",
+    description: "Reduced build size from 120MB to 21MB via IL2CPP stripping, AssetBundles, and texture compression. This optimization drove significantly higher install rates in UA campaigns.",
+    tech: ["Unity", "IL2CPP", "AssetBundles", "Optimization"],
     language: "C#",
     year: "2023",
+    company: "Rodd Games",
     featured: true,
-    stats: { users: "100K+", downloads: "500K+" }
+    stats: { metric: "Build Size", value: "21MB (-83%)" }
   },
   {
-    title: "Idle Factory Tycoon",
-    description: "Strategic idle game with automation systems and prestige mechanics. Built scalable save system handling millions of numerical values.",
-    tech: ["Unity", "C#", "System Architecture"],
-    language: "C#",
-    year: "2023",
-    featured: true,
-    stats: { users: "50K+", downloads: "200K+" }
-  },
-  {
-    title: "Puzzle Match 3D",
-    description: "Innovative 3D matching puzzle with physics-based mechanics. Developed custom physics solver for stable stacking behavior.",
-    tech: ["Unity", "C#", "3D Physics"],
+    title: "Chariot Race - Economy System",
+    description: "Architected and tuned live-ops economy system leading to 4+ hours daily retention via event-based rewards and dynamic pacing. Created Firebase sync automation tools.",
+    tech: ["Unity", "Firebase", "LiveOps", "Economy Design"],
     language: "C#",
     year: "2022",
-    stats: { users: "75K+" }
+    company: "Algebra Global",
+    stats: { metric: "Daily Retention", value: "4+ hours" }
   },
   {
-    title: "Arcade Shooter",
-    description: "Classic space shooter with boss battles and weapon systems. Created modular weapon system with 20+ unique combinations.",
-    tech: ["Unity", "C#", "Game Design"],
+    title: "Yes or No",
+    description: "Hyper-casual hit reaching 500K+ organic downloads with ~30% D1 retention. Built reusable mechanics templates reducing prototype build time by ~40%.",
+    tech: ["Unity", "C#", "Hyper-Casual", "Remote Config"],
     language: "C#",
-    year: "2022",
-    github: "https://github.com/batuhansevinc/arcade-shooter"
-  },
-  {
-    title: "Merge Kingdom",
-    description: "Merge mechanics combined with kingdom building strategy. Implemented efficient grid system for thousands of objects.",
-    tech: ["Unity", "C#", "Data Structures"],
-    language: "C#",
-    year: "2021"
-  },
-  {
-    title: "Stack Challenge",
-    description: "Addictive stacking game with precision timing mechanics. Optimized for one-handed mobile gameplay.",
-    tech: ["Unity", "C#", "Mobile UX"],
-    language: "C#",
-    year: "2021"
+    year: "2021",
+    company: "Unicode Games",
+    stats: { metric: "Downloads", value: "500K+" }
   }
 ];
 ---
@@ -75,7 +85,7 @@ const projects: Project[] = [
         Pinned Projects
       </h2>
       <p class="text-sm text-slate-muted">
-        Featured game development work
+        Notable mobile games and tools from 5+ years of game development
       </p>
     </div>
 
@@ -94,39 +104,35 @@ const projects: Project[] = [
           )}
 
           <!-- Project Title -->
-          <div class="flex items-center gap-2 mb-3">
-            <svg class="w-4 h-4 text-slate-muted shrink-0" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-            </svg>
-            <h3 class="text-accent font-semibold group-hover:underline">
-              {project.title}
-            </h3>
+          <div class="flex items-start justify-between gap-2 mb-3">
+            <div class="flex items-center gap-2 flex-1">
+              <svg class="w-4 h-4 text-slate-muted shrink-0" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
+              </svg>
+              <h3 class="text-accent font-semibold group-hover:underline">
+                {project.title}
+              </h3>
+            </div>
+            {project.company && (
+              <span class="text-xs text-slate-muted shrink-0">{project.company}</span>
+            )}
           </div>
 
           <!-- Description -->
-          <p class="text-sm text-slate-muted mb-4 line-clamp-2">
+          <p class="text-sm text-slate-muted mb-4 line-clamp-3">
             {project.description}
           </p>
 
           <!-- Stats -->
           {project.stats && (
-            <div class="flex items-center gap-4 mb-4 text-xs text-slate-muted">
-              {project.stats.users && (
-                <div class="flex items-center gap-1">
-                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
-                  </svg>
-                  <span>{project.stats.users} users</span>
-                </div>
-              )}
-              {project.stats.downloads && (
-                <div class="flex items-center gap-1">
-                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M7.47 10.78a.749.749 0 0 0 1.06 0l3.75-3.75a.749.749 0 1 0-1.06-1.06L8.75 8.439V1.75a.75.75 0 0 0-1.5 0v6.689L4.78 5.97a.749.749 0 1 0-1.06 1.06l3.75 3.75ZM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"></path>
-                  </svg>
-                  <span>{project.stats.downloads}</span>
-                </div>
-              )}
+            <div class="mb-4">
+              <div class="flex items-center gap-2 text-xs bg-slate-bg px-3 py-2 rounded border border-slate-border">
+                <svg class="w-3 h-3 text-accent" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
+                </svg>
+                <span class="text-slate-muted">{project.stats.metric}:</span>
+                <span class="text-accent font-semibold">{project.stats.value}</span>
+              </div>
             </div>
           )}
 
@@ -136,6 +142,8 @@ const projects: Project[] = [
             <div class="flex items-center gap-2 text-xs">
               <span class="w-3 h-3 rounded-full bg-accent"></span>
               <span class="text-slate-muted">{project.language}</span>
+              <span class="text-slate-border">•</span>
+              <span class="text-slate-muted">{project.year}</span>
             </div>
 
             <!-- GitHub Link -->
@@ -155,8 +163,18 @@ const projects: Project[] = [
       ))}
     </div>
 
+    <!-- Additional Projects Note -->
+    <div class="card bg-slate-surface/50 text-center">
+      <p class="text-sm text-slate-muted mb-3">
+        <span class="text-slate-text font-semibold">20+ prototypes shipped</span> during hyper-casual development at Unicode Games
+      </p>
+      <p class="text-xs text-slate-muted">
+        Includes rapid prototyping, market testing, and production titles across casual, hybrid-casual, arcade idle, and hyper-casual genres
+      </p>
+    </div>
+
     <!-- View More Link -->
-    <div class="text-center">
+    <div class="text-center mt-8">
       <a
         href="https://github.com/batuhansevinc?tab=repositories"
         target="_blank"
