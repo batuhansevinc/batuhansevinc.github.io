@@ -1,81 +1,84 @@
 ---
-// Slate Minimalist Skills Section
-interface SkillItem {
-  name: string;
-  level: string;
-}
+// GitHub Topics/Tags Style Skills
+const skillTags = [
+  "Unity", "C#", "Game Development", "Mobile Games",
+  "Performance Optimization", "System Architecture", "TypeScript", "JavaScript",
+  "Python", "Java", "Git", "Docker", "Firebase", "CI/CD",
+  "3D Physics", "Procedural Generation", "Mobile Optimization",
+  "Data Structures", "Algorithms", "Game Design", "UX Design"
+];
 
-const skills = {
-  "Core Technologies": [
-    { name: "Unity", level: "Expert" },
-    { name: "C#", level: "Expert" },
-    { name: "Game Architecture", level: "Advanced" },
-    { name: "Mobile Optimization", level: "Advanced" }
-  ],
-  "Programming": [
-    { name: "JavaScript/TypeScript", level: "Advanced" },
-    { name: "Python", level: "Intermediate" },
-    { name: "Java", level: "Intermediate" },
-    { name: "System Design", level: "Advanced" }
-  ],
-  "Tools & Platforms": [
-    { name: "Git/GitHub", level: "Expert" },
-    { name: "Docker", level: "Intermediate" },
-    { name: "Firebase", level: "Advanced" },
-    { name: "CI/CD", level: "Advanced" }
-  ]
-};
-
-const expertise = [
-  "4+ years of professional game development",
-  "Mobile game optimization for millions of users",
-  "System architecture and scalable code design",
-  "Performance profiling and memory optimization"
+const topLanguages = [
+  { name: "C#", percentage: 85, color: "bg-green-500" },
+  { name: "TypeScript", percentage: 10, color: "bg-blue-500" },
+  { name: "Python", percentage: 3, color: "bg-yellow-500" },
+  { name: "Other", percentage: 2, color: "bg-slate-600" }
 ];
 ---
 
-<section id="skills" class="section bg-slate-surface/30">
+<section id="skills" class="section">
   <div class="max-w-6xl mx-auto">
 
-    <!-- Section Header -->
-    <div class="mb-16 space-y-4">
-      <p class="text-accent text-sm font-medium uppercase tracking-wider">Skills</p>
-      <h2 class="heading-lg text-slate-text">
-        Technical Stack
+    <!-- Popular Topics - GitHub Style -->
+    <div class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-text mb-6">
+        Technologies & Skills
       </h2>
+
+      <!-- Tags Grid -->
+      <div class="flex flex-wrap gap-2">
+        {skillTags.map((skill) => (
+          <span class="px-3 py-1.5 text-xs font-medium bg-accent/10 text-accent border border-accent/20 rounded-full hover:bg-accent/20 transition-colors cursor-default">
+            {skill}
+          </span>
+        ))}
+      </div>
     </div>
 
-    <!-- Skills Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-      {Object.entries(skills).map(([category, items]) => (
-        <div class="card">
-          <h3 class="text-xl font-bold text-slate-text mb-6 pb-3 border-b border-slate-border">
-            {category}
-          </h3>
-          <div class="space-y-4">
-            {items.map((skill: SkillItem) => (
-              <div class="flex items-center justify-between">
-                <span class="text-slate-text font-medium">{skill.name}</span>
-                <span class="text-xs text-slate-muted font-mono bg-slate-bg px-2 py-1 rounded border border-slate-border">
-                  {skill.level}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+    <!-- Languages Breakdown - GitHub Style -->
+    <div class="card">
+      <h3 class="text-lg font-semibold text-slate-text mb-4">
+        Top Languages
+      </h3>
 
-    <!-- Expertise Highlights -->
-    <div class="card bg-slate-surface">
-      <h3 class="text-xl font-bold text-slate-text mb-6">Expertise Highlights</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {expertise.map((item) => (
-          <div class="flex items-start gap-3">
-            <span class="text-accent text-lg shrink-0">→</span>
-            <span class="text-slate-muted">{item}</span>
+      <!-- Progress Bar -->
+      <div class="flex h-2 rounded-full overflow-hidden mb-4">
+        {topLanguages.map((lang) => (
+          <div
+            class={lang.color}
+            style={`width: ${lang.percentage}%`}
+            title={`${lang.name} ${lang.percentage}%`}
+          ></div>
+        ))}
+      </div>
+
+      <!-- Language List -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {topLanguages.map((lang) => (
+          <div class="flex items-center gap-2">
+            <span class={`w-3 h-3 rounded-full ${lang.color}`}></span>
+            <div class="text-sm">
+              <span class="text-slate-text font-medium">{lang.name}</span>
+              <span class="text-slate-muted ml-1">{lang.percentage}%</span>
+            </div>
           </div>
         ))}
+      </div>
+    </div>
+
+    <!-- Experience Highlights -->
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="card text-center">
+        <div class="text-3xl font-bold text-accent mb-2">4+</div>
+        <div class="text-sm text-slate-muted">Years of Experience</div>
+      </div>
+      <div class="card text-center">
+        <div class="text-3xl font-bold text-accent mb-2">15+</div>
+        <div class="text-sm text-slate-muted">Projects Delivered</div>
+      </div>
+      <div class="card text-center">
+        <div class="text-3xl font-bold text-accent mb-2">1M+</div>
+        <div class="text-sm text-slate-muted">Total Downloads</div>
       </div>
     </div>
 

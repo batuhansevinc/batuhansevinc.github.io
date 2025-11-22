@@ -1,12 +1,17 @@
 ---
-// Slate Minimalist Portfolio Section
+// GitHub Pinned Repositories Style
 interface Project {
   title: string;
   description: string;
   tech: string[];
+  language: string;
   year: string;
   github?: string;
   featured?: boolean;
+  stats?: {
+    users?: string;
+    downloads?: string;
+  };
 }
 
 const projects: Project[] = [
@@ -14,26 +19,33 @@ const projects: Project[] = [
     title: "Hyper Casual Runner",
     description: "Fast-paced endless runner with procedural level generation and smooth controls. Implemented optimization techniques for 60fps on mid-range devices.",
     tech: ["Unity", "C#", "Mobile Optimization"],
+    language: "C#",
     year: "2023",
-    featured: true
+    featured: true,
+    stats: { users: "100K+", downloads: "500K+" }
   },
   {
     title: "Idle Factory Tycoon",
     description: "Strategic idle game with automation systems and prestige mechanics. Built scalable save system handling millions of numerical values.",
     tech: ["Unity", "C#", "System Architecture"],
+    language: "C#",
     year: "2023",
-    featured: true
+    featured: true,
+    stats: { users: "50K+", downloads: "200K+" }
   },
   {
     title: "Puzzle Match 3D",
     description: "Innovative 3D matching puzzle with physics-based mechanics. Developed custom physics solver for stable stacking behavior.",
     tech: ["Unity", "C#", "3D Physics"],
-    year: "2022"
+    language: "C#",
+    year: "2022",
+    stats: { users: "75K+" }
   },
   {
     title: "Arcade Shooter",
     description: "Classic space shooter with boss battles and weapon systems. Created modular weapon system with 20+ unique combinations.",
     tech: ["Unity", "C#", "Game Design"],
+    language: "C#",
     year: "2022",
     github: "https://github.com/batuhansevinc/arcade-shooter"
   },
@@ -41,12 +53,14 @@ const projects: Project[] = [
     title: "Merge Kingdom",
     description: "Merge mechanics combined with kingdom building strategy. Implemented efficient grid system for thousands of objects.",
     tech: ["Unity", "C#", "Data Structures"],
+    language: "C#",
     year: "2021"
   },
   {
     title: "Stack Challenge",
     description: "Addictive stacking game with precision timing mechanics. Optimized for one-handed mobile gameplay.",
     tech: ["Unity", "C#", "Mobile UX"],
+    language: "C#",
     year: "2021"
   }
 ];
@@ -55,81 +69,104 @@ const projects: Project[] = [
 <section id="projects" class="section">
   <div class="max-w-6xl mx-auto">
 
-    <!-- Section Header -->
-    <div class="mb-16 space-y-4">
-      <p class="text-accent text-sm font-medium uppercase tracking-wider">Portfolio</p>
-      <h2 class="heading-lg text-slate-text">
-        Selected Work
+    <!-- Section Header - GitHub Style -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-slate-text mb-2">
+        Pinned Projects
       </h2>
-      <p class="text-slate-muted text-lg max-w-2xl">
-        Game development projects showcasing technical expertise, performance optimization, and creative problem-solving.
+      <p class="text-sm text-slate-muted">
+        Featured game development work
       </p>
     </div>
 
-    <!-- Projects Grid -->
-    <div class="space-y-6">
+    <!-- Projects Grid - GitHub Pinned Repos Style -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
       {projects.map((project) => (
-        <div class="card group">
-          <div class="flex flex-col gap-4">
+        <div class="card group relative">
 
-            <!-- Project Header -->
-            <div class="flex items-start justify-between gap-4">
-              <div class="flex-1">
-                <div class="flex items-center gap-3 mb-2">
-                  <h3 class="text-2xl font-bold text-slate-text group-hover:text-accent transition-colors">
-                    {project.title}
-                  </h3>
-                  {project.featured && (
-                    <span class="text-xs font-medium px-2 py-1 bg-accent/10 text-accent border border-accent/20 rounded">
-                      Featured
-                    </span>
-                  )}
-                </div>
-                <p class="text-slate-muted leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
-
-              <span class="text-sm text-slate-muted font-mono shrink-0">{project.year}</span>
+          <!-- Pin Icon for Featured -->
+          {project.featured && (
+            <div class="absolute top-4 right-4">
+              <svg class="w-4 h-4 text-slate-muted" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.456.734a1.75 1.75 0 0 1 2.826.504l.613 1.327a3.081 3.081 0 0 0 2.084 1.707l2.454.584c1.332.317 1.8 1.972.832 2.94L11.06 10l3.72 3.72a.75.75 0 1 1-1.061 1.06L10 11.06l-2.204 2.205c-.968.968-2.623.5-2.94-.832l-.584-2.454a3.081 3.081 0 0 0-1.707-2.084l-1.327-.613a1.75 1.75 0 0 1-.504-2.826L4.456.734ZM5.92 1.866a.25.25 0 0 0-.404-.072L1.794 5.516a.25.25 0 0 0 .072.404l1.328.613A4.582 4.582 0 0 1 5.73 9.63l.584 2.454a.25.25 0 0 0 .42.119l5.47-5.47a.25.25 0 0 0-.119-.42L9.63 5.73a4.581 4.581 0 0 1-3.098-2.537L5.92 1.866Z"></path>
+              </svg>
             </div>
+          )}
 
-            <!-- Project Footer -->
-            <div class="flex items-center justify-between gap-4 pt-2 border-t border-slate-border">
-              <div class="flex flex-wrap gap-2">
-                {project.tech.map((tech) => (
-                  <span class="text-xs font-medium text-slate-muted bg-slate-bg px-3 py-1 rounded-full border border-slate-border">
-                    {tech}
-                  </span>
-                ))}
-              </div>
+          <!-- Project Title -->
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-4 h-4 text-slate-muted shrink-0" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
+            </svg>
+            <h3 class="text-accent font-semibold group-hover:underline">
+              {project.title}
+            </h3>
+          </div>
 
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link flex items-center gap-1 text-sm"
-                >
-                  <span>View Source</span>
-                  <span>→</span>
-                </a>
+          <!-- Description -->
+          <p class="text-sm text-slate-muted mb-4 line-clamp-2">
+            {project.description}
+          </p>
+
+          <!-- Stats -->
+          {project.stats && (
+            <div class="flex items-center gap-4 mb-4 text-xs text-slate-muted">
+              {project.stats.users && (
+                <div class="flex items-center gap-1">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
+                  </svg>
+                  <span>{project.stats.users} users</span>
+                </div>
+              )}
+              {project.stats.downloads && (
+                <div class="flex items-center gap-1">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M7.47 10.78a.749.749 0 0 0 1.06 0l3.75-3.75a.749.749 0 1 0-1.06-1.06L8.75 8.439V1.75a.75.75 0 0 0-1.5 0v6.689L4.78 5.97a.749.749 0 1 0-1.06 1.06l3.75 3.75ZM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z"></path>
+                  </svg>
+                  <span>{project.stats.downloads}</span>
+                </div>
               )}
             </div>
+          )}
 
+          <!-- Footer -->
+          <div class="flex items-center justify-between pt-3 border-t border-slate-border">
+            <!-- Language Badge -->
+            <div class="flex items-center gap-2 text-xs">
+              <span class="w-3 h-3 rounded-full bg-accent"></span>
+              <span class="text-slate-muted">{project.language}</span>
+            </div>
+
+            <!-- GitHub Link -->
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-xs text-slate-muted hover:text-accent transition-colors"
+              >
+                View code →
+              </a>
+            )}
           </div>
+
         </div>
       ))}
     </div>
 
-    <!-- View More -->
-    <div class="mt-12 text-center">
+    <!-- View More Link -->
+    <div class="text-center">
       <a
-        href="https://github.com/batuhansevinc"
+        href="https://github.com/batuhansevinc?tab=repositories"
         target="_blank"
         rel="noopener noreferrer"
-        class="btn-secondary"
+        class="inline-flex items-center gap-2 text-sm text-slate-muted hover:text-accent transition-colors"
       >
-        View All Projects on GitHub
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+        <span>View all repositories on GitHub</span>
       </a>
     </div>
 

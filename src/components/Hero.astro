@@ -1,74 +1,145 @@
 ---
-// Slate Minimalist Hero Component
+// GitHub-style Profile Hero
 ---
 
-<section id="hero" class="section min-h-screen flex items-center justify-center">
-  <div class="max-w-5xl w-full space-y-8 animate-fade-in">
+<section class="section pt-32">
+  <div class="max-w-6xl mx-auto">
 
-    <!-- Main Content -->
-    <div class="space-y-6">
-      <!-- Greeting -->
-      <p class="text-accent text-lg font-medium">Hi, I'm</p>
+    <!-- Profile Container - GitHub Style -->
+    <div class="flex flex-col md:flex-row gap-8 mb-16">
 
-      <!-- Name -->
-      <h1 class="heading-xl text-slate-text">
-        Batuhan Sevinc
-      </h1>
+      <!-- Left Column - Profile Info -->
+      <div class="md:w-1/4 space-y-6">
 
-      <!-- Role -->
-      <h2 class="text-3xl md:text-5xl font-bold text-slate-muted">
-        Software Engineer
-      </h2>
+        <!-- Avatar Placeholder -->
+        <div class="w-full aspect-square rounded-full bg-slate-surface border-2 border-slate-border flex items-center justify-center">
+          <span class="text-6xl font-bold text-accent">BS</span>
+        </div>
 
-      <!-- Description -->
-      <p class="text-lg md:text-xl text-slate-muted max-w-2xl leading-relaxed">
-        Unity Game Developer with 4+ years of experience. Specializing in mobile games,
-        system architecture, and performance optimization.
-      </p>
-    </div>
+        <!-- Name & Username -->
+        <div class="space-y-1">
+          <h1 class="text-2xl font-bold text-slate-text">Batuhan Sevinc</h1>
+          <p class="text-xl text-slate-muted">batuhansevinc</p>
+        </div>
 
-    <!-- CTA Buttons -->
-    <div class="flex flex-wrap gap-4 pt-6">
-      <a href="#projects" class="btn-primary">
-        View Projects
-      </a>
-      <a href="/EyupBatuhanSevinc_Portfolio.pdf" download class="btn-secondary">
-        Download CV
-      </a>
-    </div>
+        <!-- Bio -->
+        <p class="text-slate-text">
+          Unity Game Developer specializing in mobile games and performance optimization
+        </p>
 
-    <!-- Social Links -->
-    <div class="flex flex-wrap gap-6 pt-8 border-t border-slate-border">
-      <a
-        href="https://github.com/batuhansevinc"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="link text-slate-muted hover:text-accent transition-colors"
-      >
-        GitHub
-      </a>
-      <a
-        href="https://linkedin.com/in/eyupbatuhansevinc"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="link text-slate-muted hover:text-accent transition-colors"
-      >
-        LinkedIn
-      </a>
-      <a
-        href="https://twitter.com/bthnsvnc"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="link text-slate-muted hover:text-accent transition-colors"
-      >
-        Twitter
-      </a>
-      <a
-        href="mailto:eyupbatuhansevinc@gmail.com"
-        class="link text-slate-muted hover:text-accent transition-colors"
-      >
-        Email
-      </a>
+        <!-- CTA Button -->
+        <a href="/EyupBatuhanSevinc_Portfolio.pdf" download class="btn-secondary w-full text-center block">
+          Download CV
+        </a>
+
+        <!-- Stats -->
+        <div class="flex gap-4 text-sm pt-4 border-t border-slate-border">
+          <div>
+            <span class="text-slate-text font-semibold">4+</span>
+            <span class="text-slate-muted"> years</span>
+          </div>
+          <div>
+            <span class="text-slate-text font-semibold">15+</span>
+            <span class="text-slate-muted"> projects</span>
+          </div>
+        </div>
+
+        <!-- Social Links - GitHub Style -->
+        <div class="space-y-3 pt-4 border-t border-slate-border">
+          <a
+            href="mailto:eyupbatuhansevinc@gmail.com"
+            class="flex items-center gap-2 text-sm text-slate-muted hover:text-accent transition-colors"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251l.004.001.004.001.013.003.02.005.03.007.083.015c.07.012.166.026.286.042.24.031.58.063 1.005.087 3.857.22 8.374.22 12.23 0a10.265 10.265 0 0 0 1.29-.129l.084-.015.03-.007.02-.005.013-.003.004-.001.004-.001a.75.75 0 0 0 .456-.597V3.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v8.5c0 .054.017.106.048.152Z"></path>
+            </svg>
+            <span>eyupbatuhansevinc@gmail.com</span>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/eyupbatuhansevinc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-sm text-slate-muted hover:text-accent transition-colors"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z"></path>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a
+            href="https://twitter.com/bthnsvnc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-sm text-slate-muted hover:text-accent transition-colors"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
+            </svg>
+            <span>Twitter</span>
+          </a>
+
+          <a
+            href="https://github.com/batuhansevinc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-sm text-slate-muted hover:text-accent transition-colors"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Column - Main Content -->
+      <div class="md:w-3/4 space-y-8">
+
+        <!-- Introduction -->
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold text-slate-text flex items-center gap-2">
+            <svg class="w-6 h-6 text-slate-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+            Software Engineer
+          </h2>
+          <p class="text-lg text-slate-muted leading-relaxed">
+            Passionate about creating engaging gameplay experiences with <span class="text-slate-text font-semibold">4+ years</span> of professional experience in Unity game development. Strong focus on mobile games, system architecture, and performance optimization across multiple game genres including casual, hyper-casual, hybrid-casual, idle, and arcade games.
+          </p>
+        </div>
+
+        <!-- Quick Facts - GitHub Readme Style -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="card">
+            <div class="text-sm text-slate-muted mb-1">Currently</div>
+            <div class="text-slate-text font-semibold">Building Games</div>
+          </div>
+          <div class="card">
+            <div class="text-sm text-slate-muted mb-1">Learning</div>
+            <div class="text-slate-text font-semibold">Web Technologies</div>
+          </div>
+          <div class="card">
+            <div class="text-sm text-slate-muted mb-1">Main Stack</div>
+            <div class="text-slate-text font-semibold">Unity • C#</div>
+          </div>
+          <div class="card">
+            <div class="text-sm text-slate-muted mb-1">Status</div>
+            <div class="text-accent font-semibold">Open to Work</div>
+          </div>
+        </div>
+
+        <!-- CTA for Mobile -->
+        <div class="md:hidden">
+          <a href="#projects" class="btn-primary w-full text-center block">
+            View Pinned Projects
+          </a>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
