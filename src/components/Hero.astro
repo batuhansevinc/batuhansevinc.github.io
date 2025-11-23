@@ -1,9 +1,13 @@
 ---
 // GitHub-style Profile Hero
+import FloatingParticles from './FloatingParticles.astro';
 ---
 
-<section class="section pt-32">
-  <div class="max-w-6xl mx-auto">
+<section class="section pt-32 relative">
+  <!-- Floating Particles Background -->
+  <FloatingParticles />
+
+  <div class="max-w-6xl mx-auto relative z-10">
 
     <!-- Profile Container - GitHub Style -->
     <div class="flex flex-col md:flex-row gap-8 mb-16">
